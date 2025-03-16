@@ -1,80 +1,82 @@
-# VSCode Vim-Style Keybindings
+# VSCode Vim Bindings
 
-This repository contains my custom VSCode keybindings that enhance productivity with Vim-like shortcuts and terminal management.
+A collection of Vim keybindings and settings for Visual Studio Code, VSCode Insiders, and Cursor IDE.
 
-## 🎯 Features
+## Features
 
-### Space Key (Leader) Bindings
-The Space key is configured as the leader key (`vim.leader`). Here are the available commands:
+- Vim-style navigation and editing
+- Optimized for Windows
+- Compatible with VSCode, VSCode Insiders, and Cursor IDE
+- Preserves existing settings while adding Vim functionality
 
-#### Navigation
-- `Space + v` - Split vertically
-- `Space + s` - Split horizontally
-- `Space + h` - Focus left pane
-- `Space + j` - Focus pane below
-- `Space + k` - Focus pane above
-- `Space + l` - Focus right pane
-- `Space + n + e` - Open file explorer
-- `Shift + h` - Previous buffer
-- `Shift + l` - Next buffer
+## Installation
 
-#### File Operations
-- `Space + w` - Save file
-- `Space + q` - Quit
-- `Space + x` - Save and quit
-- `Space + f` - Quick open file
-- `Space + p` - Format document
+### Manual Installation
 
-#### Code Actions
-- `Space + c + a` - Quick fix
-- `[ + d` - Go to previous error/warning
-- `] + d` - Go to next error/warning
-- `g + h` - Show definition preview hover
+1. **Backup your current settings** (recommended):
+   - Copy your existing `settings.json` and `keybindings.json` from your IDE's user settings directory
+   - Store them in a safe location
 
-#### Visual Mode
-- `<` - Outdent lines (stays in visual mode)
-- `>` - Indent lines (stays in visual mode)
-- `J` - Move lines down
-- `K` - Move lines up
-- `Space + c` - Toggle comment
+2. **Install the Vim extension**:
+   - Open VSCode/Cursor
+   - Go to Extensions (Ctrl+Shift+X)
+   - Search for "Vim"
+   - Install "Vim" by vscodevim
 
-### Terminal Management
-- `Ctrl+Shift+A` - Focus next terminal
-- `Ctrl+Shift+B` - Focus previous terminal
-- `Ctrl+Shift+J` - Toggle terminal panel
-- `Ctrl+Shift+N` - Create new terminal
-- `Ctrl+Shift+W` - Kill current terminal
+3. **Copy the configuration files**:
+   - Copy `settings.json` to your IDE's user settings directory:
+     - VSCode: `%APPDATA%\Code\User\settings.json`
+     - VSCode Insiders: `%APPDATA%\Code - Insiders\User\settings.json`
+     - Cursor: `%APPDATA%\Cursor\User\settings.json`
+   - Copy `keybindings.json` to your IDE's user settings directory:
+     - VSCode: `%APPDATA%\Code\User\keybindings.json`
+     - VSCode Insiders: `%APPDATA%\Code - Insiders\User\keybindings.json`
+     - Cursor: `%APPDATA%\Cursor\User\keybindings.json`
 
-### File Explorer
-- `Ctrl+E` - Toggle sidebar visibility / Focus file explorer
-- `n` - Create new file (when file explorer is focused)
-- `Shift+N` - Create new folder (when file explorer is focused)
-- `Shift+N` - Open new window (when not in file explorer)
-- `r` - Rename file (when file explorer is focused)
-- `d` - Delete file (when file explorer is focused)
+4. **Restart your IDE** for the changes to take effect
 
-### Additional Features
-- `Ctrl+Shift+5` - Match HTML/XML tag
-- `Ctrl+Z` - Toggle Zen Mode
-- `Ctrl+F` - Search in settings (when in settings editor and not in Insert mode)
+## Key Features
 
-## 🚀 Installation
+- **Normal Mode Navigation**:
+  - `h`, `j`, `k`, `l` for movement
+  - `w`, `b` for word navigation
+  - `0`, `$` for line start/end
+  - `gg`, `G` for file start/end
 
-1. Open VSCode
-2. Press `Ctrl+Shift+P` to open the command palette
-3. Type "Open Keyboard Shortcuts (JSON)"
-4. Copy the contents of `keybindings.json` from this repository to your VSCode keybindings file
+- **Visual Mode**:
+  - `v` for character-wise selection
+  - `V` for line-wise selection
+  - `Ctrl+v` for block selection
 
-## 💡 Notes
+- **Insert Mode**:
+  - `i` for insert before cursor
+  - `a` for insert after cursor
+  - `o` for new line below
+  - `O` for new line above
 
-- Some keybindings are context-sensitive and only work in specific situations (e.g., terminal focus, file explorer focus)
-- These bindings are designed to work alongside Vim extension for VSCode
-- All keybindings can be customized by modifying the `keybindings.json` file
+- **Command Mode**:
+  - `:` for command mode
+  - `w` to save
+  - `q` to quit
+  - `wq` to save and quit
 
-## 🤝 Contributing
+## Customization
 
-Feel free to fork this repository and adapt these keybindings to your workflow. If you have suggestions for improvements, please open an issue or submit a pull request.
+Feel free to modify the `settings.json` and `keybindings.json` files to suit your preferences. The current configuration is optimized for Windows users but can be adapted for other operating systems.
 
-## 📝 License
+## Troubleshooting
 
-This project is open source and available under the MIT License. 
+If you experience any issues:
+
+1. Make sure the Vim extension is installed and enabled
+2. Check if there are any conflicting keybindings in your IDE
+3. Verify that the configuration files are in the correct location
+4. Try restarting your IDE
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
