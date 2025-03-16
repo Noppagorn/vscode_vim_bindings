@@ -79,4 +79,89 @@ Feel free to submit issues and enhancement requests!
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Detailed Key Bindings and Settings
+
+### Vim Settings
+- `vim.leader`: Set to `<Space>` (Space key)
+- `vim.hlsearch`: Enabled for better search highlighting
+- `vim.handleKeys`: Custom handling for Ctrl+F
+
+### Normal Mode Key Bindings
+#### Navigation
+- `<Space>h`: Focus left group
+- `<Space>j`: Focus below group
+- `<Space>k`: Focus above group
+- `<Space>l`: Focus right group
+- `<Space>ne`: Open file explorer
+- `Shift+h`: Previous buffer
+- `Shift+l`: Next buffer
+
+#### Window Management
+- `<Space>v`: Vertical split
+- `<Space>s`: Horizontal split
+
+#### File Operations
+- `<Space>w`: Save file
+- `<Space>q`: Quit
+- `<Space>x`: Save and quit
+
+#### Code Navigation
+- `[d`: Previous diagnostic
+- `]d`: Next diagnostic
+- `gh`: Show definition preview hover
+
+#### Quick Actions
+- `<Space>ca`: Quick fix
+- `<Space>f`: Quick open
+- `<Space>p`: Format document
+
+### Visual Mode Key Bindings
+- `<`: Outdent lines
+- `>`: Indent lines
+- `J`: Move lines down
+- `K`: Move lines up
+- `<Space>c`: Toggle comment
+
+### Terminal Key Bindings
+- `Ctrl+Shift+a`: Focus next terminal
+- `Ctrl+Shift+b`: Focus previous terminal
+- `Ctrl+Shift+j`: Toggle panel
+- `Ctrl+Shift+n`: New terminal
+- `Ctrl+Shift+w`: Kill terminal
+
+### File Explorer Key Bindings
+- `Ctrl+e`: Toggle sidebar visibility
+- `n`: New file
+- `r`: Rename file
+- `Shift+n`: New folder
+- `d`: Delete file
+
+### Editor Settings
+- `editor.formatOnSave`: Enabled
+- `editor.inlineSuggest.enabled`: Enabled
+- `editor.linkedEditing`: Enabled
+- `editor.lineNumbers`: Relative
+- `editor.minimap.enabled`: Disabled
+- `editor.suggest.insertMode`: Replace
+
+### UI Settings
+- `workbench.statusBar.visible`: Hidden
+- `workbench.activityBar.location`: Hidden
+- `breadcrumbs.enabled`: Disabled
+- `window.zoomLevel`: 0.5
+- `workbench.iconTheme`: material-icon-theme
+
+### Language-Specific Settings
+- Python: Format on type enabled
+- TypeScript/TSX: Prettier as default formatter
+- JSON: Prettier as default formatter
+- JavaScript: Auto-update imports on file move
+
+### Git Settings
+- `git.autofetch`: Enabled
+
+### Zen Mode
+- `Ctrl+z`: Toggle zen mode
+- `zenMode.hideLineNumbers`: Disabled 
