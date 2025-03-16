@@ -4,6 +4,40 @@ This repository contains my custom VSCode keybindings that enhance productivity 
 
 ## 🎯 Features
 
+### Space Key (Leader) Bindings
+The Space key is configured as the leader key (`vim.leader`). Here are the available commands:
+
+#### Navigation
+- `Space + v` - Split vertically
+- `Space + s` - Split horizontally
+- `Space + h` - Focus left pane
+- `Space + j` - Focus pane below
+- `Space + k` - Focus pane above
+- `Space + l` - Focus right pane
+- `Space + n + e` - Open file explorer
+- `Shift + h` - Previous buffer
+- `Shift + l` - Next buffer
+
+#### File Operations
+- `Space + w` - Save file
+- `Space + q` - Quit
+- `Space + x` - Save and quit
+- `Space + f` - Quick open file
+- `Space + p` - Format document
+
+#### Code Actions
+- `Space + c + a` - Quick fix
+- `[ + d` - Go to previous error/warning
+- `] + d` - Go to next error/warning
+- `g + h` - Show definition preview hover
+
+#### Visual Mode
+- `<` - Outdent lines (stays in visual mode)
+- `>` - Indent lines (stays in visual mode)
+- `J` - Move lines down
+- `K` - Move lines up
+- `Space + c` - Toggle comment
+
 ### Terminal Management
 - `Ctrl+Shift+A` - Focus next terminal
 - `Ctrl+Shift+B` - Focus previous terminal
